@@ -3,9 +3,9 @@
 - Does not require external power to the Arduino board
 - Modified for 1000Hz polling rate
 - Supports HID and Reactive light control
-- **leoo** supports up to 9 buttons (pop'n music, DanceDanceRevolution, StepMania)
-- **leoovxhq** supports up to 7 buttons and 2 high-quality encoders (SOUND VOLTEX, K-Shoot MANIA)
-- Add system button or change code before uploading to change light control (see [leoo.ino](leoo/leoo.ino) or [leoo.ino](leoovxhq/leoovxhq.ino))
+- **leoo** supports up to 9 buttons (pop'n music, DanceDanceRevolution, and StepMania)
+- **leoovxhq** supports up to 7 buttons and 2 high-quality encoders (SOUND VOLTEX and K-Shoot MANIA)
+- Add system button or change code before uploading to change light control (see [leoo.ino](leoo/leoo.ino) or [leovxhq.ino](leovxhq/leovxhq.ino))
 
 # How To Use
 - Select **Arduino Leonardo** as your board in Arduino IDE
