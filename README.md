@@ -10,7 +10,7 @@
 
 # How To Use
 - [Download the code archive](https://github.com/Espionage724/iivx/archive/master.zip) and extract it
-- [Acquire Arduino IDE](https://www.arduino.cc/Main/Software) (must be newer than 1.6.8) and start it
+- [Acquire Arduino IDE](https://www.arduino.cc/Main/Software) (must be version 1.6.8 or newer) and start it
 - Select **Arduino Leonardo** as your board in Arduino IDE (Tools -> Board)
 - Select the COM Port that your board is using (Tools -> Port)
 - Select the sketch you want (File -> Open -> either **iivx-master/leoo/leoo.ino** or **iivx-master/leovxhq/leovxhq.ino**)
