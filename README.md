@@ -27,6 +27,11 @@
 - All Lights share a **GND** pin
 - Lights require resistors, and some pre-assembled arcade button kits come with resistors soldered on already (check inside plastic light housing)
 
+## Shortcuts
+- [SOUND VOLTEX](#sound-voltex)
+- [DanceDanceRevolution](#dancedancerevolution)
+- [pop'n music](#popn-music)
+
 ## SOUND VOLTEX
 - Both Analogs share a **GND** and **5V** pin
 
