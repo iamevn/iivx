@@ -20,7 +20,7 @@
 
 # Assumptions
 - One board for SOUND VOLTEX and/or K-Shoot MANIA with 7 buttons, 7 lights, and 2 encoders
-- One board for DanceDanceRevolution and/or StepMania with no lights and only 4 panels/buttons
+- One board for DanceDanceRevolution and/or StepMania with no lights and only 4 panels/buttons (if lights or additional buttons are needed, follow the pins for pop'n music)
 - One board for pop'n music with 9 buttons and lights
 
 # Pins
