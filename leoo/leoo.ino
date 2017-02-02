@@ -1,14 +1,18 @@
 #include "iivx_leo.h"
 iivxReport_t report; 
 
-#define REPORT_DELAY 2000
+#define REPORT_DELAY 1000
+//#define REPORT_DELAY 2000
 // Number of microseconds between HID reports
-// 2000 = 500hz
+// 1000 = 1000hz (modified)
+// 2000 = 500hz (leoo default)
 
 int tmp;
 uint8_t buttonCount = 9;
 uint8_t lightMode = 0;
 // 0 = reactive lighting, 1 = HID lighting
+// HID lighting is supported for bemanitools with pop'n music and DanceDanceRevolution
+// Reactive lighting activates lights on button-press, regardless of the game (StepMania)
 uint8_t ledPins[] = {1,2,3,4,5,6,7,8,9,10};
 uint8_t buttonPins[] = {11,12,13,18,19,20,21,22,23};
 uint8_t sysPin = 0;

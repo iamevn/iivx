@@ -1,9 +1,11 @@
 #include "iivx_leo.h"
 iivxReport_t report; 
 
-#define REPORT_DELAY 2000
+#define REPORT_DELAY 1000
+//#define REPORT_DELAY 2000
 // Number of microseconds between HID reports
-// 2000 = 500hz
+// 1000 = 1000hz (modified)
+// 2000 = 500hz (leovxhq default)
 
 #define ENC_L_A 0
 #define ENC_L_B 1
@@ -11,9 +13,10 @@ iivxReport_t report;
 #define ENC_R_A 2
 #define ENC_R_B 3
 #define ENC_R_B_ADDR 0
-#define ENCODER_SENSITIVITY (double) 1.5625
+#define ENCODER_SENSITIVITY (double) 2.34375
+//#define ENCODER_SENSITIVITY (double) 1.5625
 #define ENCODER_PORT PIND
-// encoder sensitivity = number of positions per rotation (400) / number of positions for HID report (256)
+// encoder sensitivity = number of positions per rotation (600 modified) (400 leovxhq default) / number of positions for HID report (256)
 /*
  * connect encoders
  * VOL-L to pins 0 and 1
@@ -24,6 +27,8 @@ int tmp;
 uint8_t buttonCount = 7;
 uint8_t lightMode = 1;
 // 0 = reactive lighting, 1 = HID lighting
+// HID lighting is supported for bemanitools and SOUND VOLTEX
+// Reactive lighting activates lights on button-press, regardless of the game (K-Shoot MANIA)
 uint8_t ledPins[] = {6,7,8,9,10,11,12};
 uint8_t buttonPins[] = {13,18,19,20,21,22,23};
 uint8_t sysPin = 5;
