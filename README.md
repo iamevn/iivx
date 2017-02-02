@@ -8,10 +8,12 @@
 - Add system button or change code before uploading to change light control (see [leoo.ino](leoo/leoo.ino) or [leovxhq.ino](leovxhq/leovxhq.ino))
 
 # How To Use
-- Select **Arduino Leonardo** as your board in Arduino IDE
-- Select the COM Port that your board is using
-- Select the sketch you want (either **leo.ino** or **leovxhq.ino**)
-- Upload the sketch to your board
+- [Download the code archive](https://github.com/Espionage724/iivx/archive/master.zip) and extract it
+- [Acquire Arduino IDE](https://www.arduino.cc/Main/Software) (must be newer than 1.6.8) and start it
+- Select **Arduino Leonardo** as your board in Arduino IDE (Tools -> Board)
+- Select the COM Port that your board is using (Tools -> Port)
+- Select the sketch you want (File -> Open -> either **iivx-master/leoo/leoo.ino** or **iivx-master/leovxhq/leovxhq.ino**)
+- Upload the sketch to your board (Sketch -> Upload)
 - Disconnect the board from your computer and implement it into your controller
 - Connect the completed controller to the computer being used for games
 - Bind controls for the games you want to play
