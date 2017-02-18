@@ -2,11 +2,11 @@
 - For [Arduino Leonardo](https://www.arduino.cc/en/main/arduinoBoardLeonardo) boards (authentic or clones)
 - Does not require external power to the Arduino board
 - Modified for 1000Hz polling rate
-- Supports HID and Reactive light control
+- Supports HID (default) and Reactive light control
 - **leoo** supports up to 9 buttons (pop'n music, DanceDanceRevolution, and StepMania)
 - **leovxhq** supports up to 7 buttons and 2 high-quality (50+ ppr/pulses per revolution) encoders (SOUND VOLTEX and K-Shoot MANIA)
 - This is a personal fork; see the main [iivx](https://github.com/4yn/iivx) project for more use-cases, information, and support
-- Add system button or change code before uploading to change light control (see [leoo.ino](leoo/leoo.ino) or [leovxhq.ino](leovxhq/leovxhq.ino))
+- Add system button or change code before uploading to change light control (see [leoo.ino](leoo/leoo.ino#L12) or [leovxhq.ino](leovxhq/leovxhq.ino#L28))
 
 # How To Use
 - [Download the code archive](https://github.com/Espionage724/iivx/archive/master.zip) and extract it
