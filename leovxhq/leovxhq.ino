@@ -13,10 +13,10 @@ iivxReport_t report;
 #define ENC_R_A 2
 #define ENC_R_B 3
 #define ENC_R_B_ADDR 0
-#define ENCODER_SENSITIVITY (double) 2.34375
+#define ENCODER_SENSITIVITY (double) 6
 //#define ENCODER_SENSITIVITY (double) 1.5625
 #define ENCODER_PORT PIND
-// encoder sensitivity = number of positions per rotation (600 modified) (400 leovxhq default) / number of positions for HID report (256)
+// encoder sensitivity = number of positions per rotation (400 leovxhq default) / number of positions for HID report (256)
 /*
  * connect encoders
  * VOL-L to pins 0 and 1
