@@ -9,7 +9,7 @@ iivxReport_t report;
 
 int tmp;
 // variables for state change
-uint8_t state = 0
+uint8_t state = 0;
 // 0 = normal operation, 1 = SYS held before lighting change mode, 2 = lighting change mode
 unsigned long sysHoldTime;
 const unsigned long sysHoldDelay = 3000; // ms
@@ -105,6 +105,7 @@ void normalMode() {
   }
 
   // Detect state change
+  // change to interMode if SYS is pressed
   if (digitalRead(sysButton) == LOW) {
     state = 1;
     sysHoldTime = millis();
@@ -126,6 +127,8 @@ void interMode() {
   }
 
   // Detect state change
+  // change to normalMode if SYS is released
+  // change to changeMode after sysHoldDelay milliseconds
   if (digitalRead(sysButton) == HIGH) {
     state = 0;
   } else if (millis() - sysHoldTime >= sysHoldDelay) {
@@ -172,6 +175,7 @@ void changeMode() {
   if (lightMode == 2) digitalWrite(sysLight, LOW);
 
   // Detect state change
+  // change to normalMode if SYS is released
   if (digitalRead(sysButton) == HIGH) {
     state = 0;
   }
