@@ -161,6 +161,7 @@ void changeMode() {
   }
 
   // Light LEDs
+  // option 1
   // buttons 1-3 are on, buttons 4-6 blink, buttons 7-9 are off
   // cycle between 0b000000111 and 0b000111111
   if (millis() % (blinkDelay * 2) < blinkDelay) {
@@ -170,9 +171,34 @@ void changeMode() {
     lightDesc = 077;
     if (lightMode == 1) digitalWrite(sysLight, HIGH);
   }
-  lights(lightDesc);
   if (lightMode == 0) digitalWrite(sysLight, HIGH);
   if (lightMode == 2) digitalWrite(sysLight, LOW);
+  lights(lightDesc);
+
+  // option 2
+  /*
+  // button 4 is on, button 5 blinks, button 6 is off
+  // buttons 1-3, 7-9 light/blink/nolight depending on lightMode
+  // cycle between 0b000110000 and 0b000100000
+  if (millis() % (blinkDelay * 2) < blinkDelay) {
+    lightDesc = 040;
+    if (lightMode == 1) digitalWrite(sysLight, LOW);
+  } else {
+    if (lightMode == 1) {
+      digitalWrite(sysLight, HIGH);
+      // 0b111110111
+      lightDesc = 0767;
+    } else {
+      lightDesc = 060;
+    }
+  }
+  if (lightMode == 0) {
+    digitalWrite(sysLight, HIGH);
+    lightDesc |= 0707;
+  }
+  if (lightMode == 2) digitalWrite(sysLight, LOW);
+  lights(lightDesc);
+   */
 
   // Detect state change
   // change to normalMode if SYS is released
